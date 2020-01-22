@@ -1,0 +1,36 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Construtores
+		Aluno aluno = new Aluno("Ali");
+		Aluno aluno2 = new Aluno();
+		Aluno aluno3 = null;
+
+		// Heranca
+		aluno2.setCpf("45184880836");
+
+		// Polimorfismo
+		aluno2.salvar();
+
+		// Excecoes
+		// aluno2.salvar(aluno3);
+		
+		// Pessoa
+		Pessoa pessoa = new Pessoa();
+		pessoa.setDataNascimento(new Date());
+		pessoa.setAltura(1.59);
+		pessoa.setNome("Ali");
+		pessoa.imprimir();
+		
+		String pattern = "MM-dd-yyyy";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		String date = simpleDateFormat.format("11-06-1998");
+		System.out.println(date);
+	}
+
+}

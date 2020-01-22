@@ -1,0 +1,21 @@
+
+public class Agenda extends Pessoa {
+	
+	private Pessoa[] array = new Pessoa[10];
+	
+	
+	public void armazenaPessoa(int posicao, Pessoa pessoa) {
+		array[posicao] = pessoa;
+	}
+	
+
+	public final Pessoa[] getAgenda() {
+		return array;
+	}
+
+	public final void setAgenda(Pessoa[] agenda) {
+		this.array = array;
+	}
+	
+	
+}
