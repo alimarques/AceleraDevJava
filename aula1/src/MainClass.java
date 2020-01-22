@@ -1,5 +1,5 @@
 
-public class AulaApplication {
+public class MainClass {
 	
 	public String nome; // variavel global
 	
