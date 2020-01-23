@@ -1,27 +1,31 @@
 
 public class Exercicios {
 	
-	public void exercicio1(int a, int b) {
+	public void trocarValor(int a, int b) {
+		// Trocar o valor de a e b sem criar uma nova variavel
 		b = b+a;
 		a = b-a;
 		b = b-a;
-		System.out.println("a: "+a+" b: "+b);
+		Imprimir imprime = new Imprimir();
+		imprime.imprimir("Valor de A:", "Valor de B:", a, b);
 	}
 	
 	public void exercicio2A(int a, int b) {
-		System.out.println("b: "+b);
+		Imprimir imprime = new Imprimir();
+		imprime.imprimir("Valor de B:",b);
 		b = 5;
-		System.out.println("a:"+a+" b: "+b);
+		imprime.imprimir("Valor de A:", "Valor de B:", a, b);
 	}
 	
 	public void exercicio2B(int a, int b) {
 		int c;
 		c = a+b;
-		System.out.println("c: "+c);
+		Imprimir imprime = new Imprimir();
+		imprime.imprimir("Valor de C:",c);
 		b = 10;
-		System.out.println("b: "+b+" c: "+c);
+		imprime.imprimir("Valor de B:", "Valor de C:", b, c);
 		c = a+b;
-		System.out.println("a: "+a+" b: "+b+" c: "+c);
+		imprime.imprimir("Valor de A:", "Valor de B:","Valor de C:", a, b,c);
 	}
 	
 	public void exercicio2C(int a, int b) {
@@ -29,17 +33,19 @@ public class Exercicios {
 		c = a;
 		b = c;
 		a = b;
-		System.out.println("a: "+a+" b: "+b+" c: "+c);
+		Imprimir imprime = new Imprimir();
+		imprime.imprimir("Valor de A:", "Valor de B:","Valor de C:", a, b,c);
 	}
 	
-	public void exercicio2D(int a, int b) {
+	public void exercicio2D(int a) {
+		int b;
 		b = a+1;
 		a = b+1;
 		b = a+1;
 		Imprimir imprime = new Imprimir();
-		imprime.imprimir("a: ", a);
+		imprime.imprimir("Valor de A:", a);
 		a = b+1;
-		System.out.println("a: "+a+" b: "+b);
+		imprime.imprimir("Valor de A:", "Valor de B:", a, b);
 	}
 	
 	public void exercicio2E(int a, int b) {
@@ -47,18 +53,18 @@ public class Exercicios {
 		c = a+b;
 		b = 20;
 		a = 10;
-		System.out.println("a: "+a+" b: "+b+" c: "+c);
+		Imprimir imprime = new Imprimir();
+		imprime.imprimir("Valor de A:", "Valor de B:", "Valor de C:", a, b,c);
 	}
 	
-	public void exercicio2F() {
-		int x, y, z;
-		x = 1;
-		y = 2;
+	public void exercicio2F(int x, int y) {
+		int z;
 		z = y - x;
-		System.out.println("z: "+z);
+		Imprimir imprime = new Imprimir();
+		imprime.imprimir("Valor de Z:", z);
 		x = 5;
 		y = x+z;
-		System.out.println("x: "+x+" y: "+y+" z: "+z);
+		imprime.imprimir("Valor de X:", "Valor de Y:","Valor de Z:", x, y, z);
 	}
 	
 }
