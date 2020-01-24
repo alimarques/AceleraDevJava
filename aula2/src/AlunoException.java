@@ -5,6 +5,7 @@ public class AlunoException extends Exception {
 	
 	public AlunoException(String error) {
 		this.error = error;
+		System.out.println(this.error);
 	}
 	
 }

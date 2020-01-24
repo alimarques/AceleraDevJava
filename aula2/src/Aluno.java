@@ -1,32 +1,28 @@
 
-public class Aluno extends PessoaFisica {
-
-	private String nome; 		// Referenciar para encapsulamento
-	private String matricula; 	
+public class Aluno extends Pessoa {
+	// A classe Aluno extende os objetos de PessoaFisica
 	
-	public Aluno(String nome) {
+	private String matricula; // Referenciar para encapsulamento
+		
+	
+	// Construtor que passa nome e matricula
+	public Aluno(String nome, String matricula) {
 		this.nome = nome;
+		this.matricula = matricula;
 	}
 
+	// Construtor simples
 	public Aluno() {
 		
 	}
 	
 	public Aluno salvar(Aluno aluno) throws AlunoException {
-		try{aluno.setMatricula("183462");
+		try{aluno.getMatricula();
 		aluno.setNome(null);
-		}catch (Exception e) {
+		}catch (Exception error) {
 			throw new AlunoException("Erro ao salvar aluno");
 		}
 		return null;
-	}
-
-	public final String getNome() {
-		return nome;
-	}
-
-	public final void setNome(String nome) {
-		this.nome = nome;
 	}
 
 	public final String getMatricula() {
