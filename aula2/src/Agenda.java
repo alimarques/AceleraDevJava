@@ -20,6 +20,23 @@ public class Agenda extends Pessoa {
 		}
 	}
 	
+	public void armazenarPessoa(Pessoa[] pessoas) {
+		// armazenar array de pessoas em posicao livre
+		int i = 0;
+		for(Pessoa registro: pessoas) {
+			while(i<10) {
+				if (agenda[i] == null){
+					this.agenda[i] = registro;
+					break;
+				}
+				i++;
+			}
+		}
+		if (i == 10) {
+			System.out.println("Sem posições disponíveis no momento");
+		}
+	}
+	
 	public void imprimirAgenda() {
 		// Imprimir agenda
 		for(Pessoa registro: agenda) {

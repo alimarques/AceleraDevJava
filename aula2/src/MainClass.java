@@ -10,6 +10,7 @@ public class MainClass {
 
 		// Heranca
 		aluno.setCpf("54867923104");
+		aluno2.setNome("Julia");
 		//System.out.println(aluno.getCpf());
 
 		// Excecoes
@@ -35,24 +36,51 @@ public class MainClass {
 		
 		// Classe Agenda
 		Agenda agenda = new Agenda();
+		Pessoa[] pessoas = {pessoa2,pessoa3};
 		agenda.armazenarPessoa(pessoa1);
-		agenda.armazenarPessoa(pessoa2);
-		agenda.armazenarPessoa(pessoa3);
-		//agenda.imprimirAgenda();
+		agenda.armazenarPessoa(pessoas);
+		
+		if(false) {
+			TesteAgenda(agenda);
+		}
+		
+		// Classe Elevador
+		Elevador elevador = new Elevador(8,10);
+		
+		if(false) {
+			TesteElevador(elevador);
+		}
+
+	}
+	
+	public static void TesteAgenda(Agenda agenda) {
+		// Teste com Classe Agenda
+		agenda.imprimirAgenda();
 		
 		agenda.imprimirPessoa("Ali");
 		
 		System.out.println();
 		agenda.imprimirPessoa("Fabio");
-		
+				
 		agenda.removerPessoa("Jose");
-		
+				
 		System.out.println();
 		agenda.imprimirAgenda();
-		
+			
 		System.out.println();
 		agenda.consultarVagas();
-		
+	}
+	
+	public static void TesteElevador(Elevador elevador) {
+		// Teste com Classe Elevador
+		elevador.entrar(5);
+		System.out.println(elevador.getQuantPessoas());
+		elevador.sair(7);
+		System.out.println(elevador.getQuantPessoas());
+		elevador.subir(1);
+		System.out.println(elevador.getAndarAtual());
 	}
 
 }
+
+
