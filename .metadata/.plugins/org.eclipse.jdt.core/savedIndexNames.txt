@@ -1,18 +1,4 @@
 INDEX VERSION 1.131+/home/ali/codenation/AceleraDevJava/.metadata/.plugins/org.eclipse.jdt.core
-3370363899.index
-3598827823.index
-3953802911.index
 3548278923.index
-2955974574.index
-3413450303.index
-2589884023.index
-1473750266.index
 1249321265.index
-893671750.index
-2127321478.index
-1569079488.index
-995344692.index
-1162540122.index
-690124413.index
-2130765565.index
-1368109090.index
+1030754727.index

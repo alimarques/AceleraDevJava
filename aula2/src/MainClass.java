@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class MainClass {
 
@@ -50,7 +51,13 @@ public class MainClass {
 		if(false) {
 			TesteElevador(elevador);
 		}
-
+		
+		//Desafio
+		DesafioFibonacci desafio = new DesafioFibonacci();
+		List<Integer> fibo = desafio.fibonacci();
+		System.out.println(fibo);
+		System.out.println(desafio.isFibonacci(144));
+		
 	}
 	
 	public static void TesteAgenda(Agenda agenda) {
