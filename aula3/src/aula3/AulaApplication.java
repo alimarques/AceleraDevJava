@@ -1,5 +1,6 @@
 package aula3;
 
+import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 
@@ -26,7 +27,6 @@ public class AulaApplication {
 		Function<Integer, Integer> function = (x) -> x*3 + 2;
 		Integer resultado = function.apply(1);
 		System.out.print(resultado);
-		
 		
 	}
 
