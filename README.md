@@ -18,3 +18,11 @@ Curso backend feito em Java pelo Codenation no AceleraDev.
 ### Aula 2
 
 - Programação Orientada a Objetos (POO).
+
+### Aula 3
+
+- Interfaces, annotations e classes abstratas.
+
+### Aula 4
+
+- Clean Code, SOLID e boas práticas.
